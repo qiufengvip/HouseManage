@@ -14,11 +14,26 @@ import com.winit.entity.pojo.Province;
 import com.winit.service.AreaService;
 
 
+/**
+ * 
+ * @desc 获取全国地区  省 市  县
+ * @author qiufeng
+ * @version 1.0
+ * @time 2021年4月6日 上午12:01:49
+ */
+
 @RestController
 @RequestMapping("/api/area")
 public class AreaController {
 	@Autowired
 	private AreaService areaService;
+	
+	
+	/**
+	 * @desc 获取省份地区信息
+	 * @param province
+	 * @return
+	 */
 	@RequestMapping(value="/getProvince",method = RequestMethod.POST)
 	public ResultDto getProvince(Province province){
 		ResultDto resultDto=new ResultDto();
@@ -29,6 +44,13 @@ public class AreaController {
 		}
 		return resultDto;
 	}
+	
+	
+	/**
+	 * @desc  获取市区
+	 * @param city
+	 * @return
+	 */
 	@RequestMapping(value="/getCity",method = RequestMethod.POST)
 	public ResultDto getCity(City city){
 		ResultDto resultDto=new ResultDto();
@@ -39,6 +61,14 @@ public class AreaController {
 		}
 		return resultDto;
 	}
+	
+	
+	
+	/**
+	 * @desc  获取县区
+	 * @param county
+	 * @return
+	 */
 	@RequestMapping(value="/getCounty",method = RequestMethod.POST)
 	public ResultDto getCounty(County county){
 		ResultDto resultDto=new ResultDto();

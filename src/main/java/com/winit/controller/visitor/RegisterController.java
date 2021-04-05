@@ -44,8 +44,13 @@ public class RegisterController {
 	
 	
 	/**
-	 * 保存账号
-	 * @param session
+	 * @desc 点击注册
+	 * @param user	username: 用户名
+					password: 密码
+					type: 	      类型
+					realname: 真实姓名
+					email: 	      邮箱
+	 * 
 	 * @param view
 	 * @return
 	 */

@@ -22,6 +22,12 @@ public class MessageController {
 	@Autowired
 	private MessageService messageService;
 	
+	
+	/**
+	 * @desc  获取公告列表
+	 * @param message
+	 * @return
+	 */
 	@RequestMapping(value="/geMessageList",method = RequestMethod.POST)
 	public ResultDto list(Message message){
 		PageDto<Message> pageDto = new PageDto<Message>();
@@ -42,6 +48,13 @@ public class MessageController {
 		return resultDto;
 	}
 	
+	
+	/**
+	 * @desc  发布新内容
+	 * @param message  title: 标题
+						Content: 内容
+	 * @return
+	 */
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public ResultDto save(Message message){
 		messageService.save(message);

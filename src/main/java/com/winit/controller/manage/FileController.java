@@ -33,6 +33,15 @@ public class FileController {
 	@Value("${file.host.path}")
 	private String fileHostPath;
 	
+	
+	/**
+	 * @desc 上传图片
+	 * @param files   文件
+	 * @param userId   用户id
+	 * @return
+	 * @throws IllegalStateException
+	 * @throws IOException
+	 */
 	//前端先上传图片预览生成图片id 给图片右上角一个删除图标 点击时remove(id)  压缩或者不压缩放入到一个数组里统一上传file 
 	@RequestMapping("/uploadFile")//同时上传多张文件前端数组存储之后点保存 统一上传 集修改删除于一体
 	@ResponseBody

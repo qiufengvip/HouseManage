@@ -22,9 +22,11 @@ import com.winit.service.UserService;
 
 
 /**
- * 登录控制器
- * @author 555
- *
+ * 
+ * @desc 登录控制器
+ * @author qiufeng
+ * @version 1.0
+ * @time 2021年4月5日 下午11:31:46
  */
 @Controller
 @RequestMapping("web/visitor")
@@ -35,6 +37,12 @@ public class LoginController {
 	private UserService userService;
 
 	
+	/**
+	 * @desc 登录页面
+	 * @param view
+	 * @param session
+	 * @return
+	 */
 	@RequestMapping(value = "/toLogin")
 	public ModelAndView toLogin(ModelAndView view,HttpSession session){
 		view.setViewName("login");
@@ -43,7 +51,12 @@ public class LoginController {
 
 	  
 	/**
-	 * 用户登录
+	 * @desc 用户登录提交  
+	 * @param cspUser 	username: 用户名
+						password: 密码
+						type: 用户类型
+	 * @param session
+	 * @return
 	 */
 	@RequestMapping(value = "/userLogin")
 	public @ResponseBody Map<String,Object> userLogin(User cspUser,HttpSession session) {
@@ -58,6 +71,12 @@ public class LoginController {
 		return map;
 	}
 	
+	/**
+	 * @desc  找回密码
+	 * @param user	userName: 	用户名
+					email: 		邮箱地址
+	 * @return
+	 */
 	@RequestMapping(value = "/retrievePassword")
 	@ResponseBody
 	public ResultDto retrievePassword(User user)  {
@@ -80,7 +99,4 @@ public class LoginController {
 		   }
 	   return resultDto;
 	}
-	
-
-
 }

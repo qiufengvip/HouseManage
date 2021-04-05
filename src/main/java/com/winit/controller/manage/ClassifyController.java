@@ -30,6 +30,12 @@ public class ClassifyController {
 		pageDto.setResult(list);
 		return ResultUtil.success(pageDto, null);
 	}
+	
+	/**
+	 * @desc  获取家政服务类别
+	 * @param classify
+	 * @return
+	 */
 	@RequestMapping(value="/getAll",method = RequestMethod.POST)
 	public ResultDto getAll(Classify classify){
 		ResultDto resultDto=new ResultDto();

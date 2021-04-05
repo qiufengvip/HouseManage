@@ -17,6 +17,13 @@ import com.winit.service.DictionaryService;
 public class DictionaryController {
 	@Autowired
 	private DictionaryService dictionaryService;
+	
+	
+	/**
+	 * @desc  获取所有学历信息
+	 * @param dictionary
+	 * @return
+	 */
 	@RequestMapping(value="/getDictionary",method = RequestMethod.POST)
 	public ResultDto getDictionary(Dictionary dictionary){
 		ResultDto resultDto=new ResultDto();

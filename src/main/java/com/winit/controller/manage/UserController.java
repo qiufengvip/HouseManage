@@ -26,6 +26,18 @@ public class UserController{
 	@Autowired
 	private UserService userService;
 	
+	
+	/**
+	 * @desc  获取所有用户信息
+	 * @param user 	id:  
+					page: 1  页数
+					rows: 10  行数
+					
+					classId:    家政服务类别	 可选
+					levelId: 	级别			 可选
+					type: 1             类型			 可选
+	 * @return
+	 */
 	@RequestMapping(value="/getUserList",method = RequestMethod.POST)
 	public ResultDto userList(User user){
 		PageDto<User> pageDto = new PageDto<User>();
@@ -51,6 +63,35 @@ public class UserController{
 		return resultDto;
 	}
 
+	
+	/**
+	 * @desc 修改用户 
+	 * @param 	user 
+	  			id: 		用户id
+				username: 	用户名
+				password: 	密码
+				realname: 	真实姓名
+				email:   	邮箱
+				type: 		身份 
+				
+				补全信息
+				id: 2  										用户id
+				abilityId: 19  								能力
+				priceId: 29  								期望工资	
+				ageId: 13  									年龄
+				educationId: 6  							学历		
+				classId: -26214399   						家政服务类别			
+				levelId: 187695105    						级别
+				provinceCode: 410000  						省代码			
+				cityCode: 411400  							市区代码	
+				countyCode: 411421  						县区代码
+				expericeId: 1  								经验
+				cardNumber: 1  								身份证号
+				phoneNumber: 2  							手机号		
+				photoUrl: file/images/2/1617638631525.png 	头像	
+	 * 	
+	 * @return
+	 */
 	@RequestMapping(value = "/addUser", method = RequestMethod.POST)
 	public ResultDto addUser(User user){
 		ResultDto resultdto =new ResultDto();
@@ -79,11 +120,27 @@ public class UserController{
 		return ResultUtil.success("密码修改成功");
 	}
 	
+	
+	/**
+	 * @desc  删除用户  
+	 * @param user   id: 用户id
+	 * @return
+	 */
 	@RequestMapping(value = "/deleteUser")
 	public ResultDto deleteUser(User user){
 		userService.deleteUser(user.getId());
 		return ResultUtil.success("删除成功");
 	}
+	
+	
+	/**
+	 * @desc  管理员-审核用户通过
+	 * @param user 	id: 用户id
+					isEnable: 状态 1 = 通过  0 = 不通过
+	 * 
+	 * @param session
+	 * @return
+	 */
 	@RequestMapping(value = "/updateselective", method = RequestMethod.POST)
 	public ResultDto updateselective(User user, HttpSession session){
 		   ResultDto resultdto =new ResultDto();
