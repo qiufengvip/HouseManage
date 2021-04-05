@@ -1,0 +1,254 @@
+body {
+    background-color: #dbdbdb6c;
+}
+
+.qsub-login {
+    cursor: pointer;
+}
+
+.qsub-sign {
+    cursor: pointer;
+}
+
+.qsub-fw {
+    cursor: pointer;
+}
+
+.jumbotron {
+    margin-top: 40px;
+    background-color: #ffffff;
+    height: 130px;
+}
+
+.top-se {
+    background: url(/image/index-bj.jpg) no-repeat;
+    width: 100%;
+    height: 45vw;
+    background-size: 100% 100%;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 50px;
+    margin-top: 10px;
+}
+
+.qsub-pitch {
+    border-bottom: 2px solid #f96f7b;
+}
+
+.qsub-top {
+    padding: 15px 0;
+    background-color: #ffffff;
+}
+
+.icon-bar {
+    background-color: #f96f7b;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    border: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+}
+
+.qsub-top-botton {
+    color: aliceblue;
+    background-color: #f96f7b;
+    margin: 2px;
+    border-radius: 30px;
+    min-width: 100px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.qsub-fw-title {
+    padding: 10px 20px;
+    border-bottom: 2px solid #000000;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.qsub-fw-list {
+    box-shadow: -1px -1px 5px #f5f5f5, 1px 1px 5px #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.qsub-fw-list-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.qsub-fw-list-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.qsub-fw-list-but {
+    margin: 20px;
+    border-radius: 30px;
+    background-color: #f96f7b;
+    padding: 10px 30px;
+    color: #f5f5f5;
+}
+
+.fuwu {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background: #f96f7b20;
+    padding-left: 0;
+    height: 250px;
+}
+
+.fuwu-left {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    border-radius: 20px;
+    background: url(/image/l-01.jpg) no-repeat;
+    background-size: auto 100%;
+}
+
+.fuwu-img1 {
+    background: url(/image/l-02.jpg) no-repeat;
+    background-size: 100% auto;
+}
+
+.fuwu-left div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #00000075;
+    border-radius: 20px;
+}
+
+.fuwu-left span {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f5f5f5;
+    font-size: 20px;
+}
+
+.fuwu-right {
+    padding: 10px;
+    width: 70%;
+    /* height: 100%; */
+    border-radius: 20px;
+    /* color: #f5f5f5; */
+    font-size: 15px;
+    /* padding-left: 50px; */
+}
+
+.media-box.plain {
+    background-color: #fff;
+    padding: 20px;
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    flex-direction: column;
+    position: relative;
+    border-color: #d7dfe3;
+    border-radius: 4px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    color: #333;
+    /* width: 300px; */
+}
+
+.media-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-01 {
+    background: url(/image/fw-01.png);
+    /* widows: 100%; */
+    /* height: 100%; */
+    background-size: 100% 100%;
+    margin-right: 20px;
+}
+
+.icon-02 {
+    background: url(/image/fw-02.png);
+    /* widows: 100%; */
+    /* height: 100%; */
+    background-size: 100% 100%;
+    margin-right: 20px;
+}
+
+.icon-03 {
+    background: url(/image/fw-03.png);
+    /* widows: 100%; */
+    /* height: 100%; */
+    background-size: 100% 100%;
+    margin-right: 20px;
+}
+
+.icon-04 {
+    background: url(/image/fw-04.png);
+    /* widows: 100%; */
+    /* height: 100%; */
+    background-size: 100% 100%;
+    margin-right: 20px;
+}
+
+.icon-05 {
+    background: url(/image/fw-05.png);
+    /* widows: 100%; */
+    /* height: 100%; */
+    background-size: 100% 100%;
+    margin-right: 20px;
+}
+
+.icon-06 {
+    background: url(/image/fw-06.png);
+    /* widows: 100%; */
+    /* height: 100%; */
+    background-size: 100% 100%;
+    margin-right: 20px;
+}
+
+.icon-07 {
+    background: url(/image/fw-07.png);
+    /* widows: 100%; */
+    /* height: 100%; */
+    background-size: 100% 100%;
+    margin-right: 20px;
+}
+
+.icon-08 {
+    background: url(/image/fw-08.png);
+    /* widows: 100%; */
+    /* height: 100%; */
+    background-size: 100% 100%;
+    margin-right: 20px;
+}
+
+.icon-09 {
+    background: url(/image/fw-09.png);
+    /* widows: 100%; */
+    /* height: 100%; */
+    background-size: 100% 100%;
+    margin-right: 20px;
+}
