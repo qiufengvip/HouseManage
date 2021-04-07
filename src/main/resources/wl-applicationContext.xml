@@ -18,7 +18,7 @@
 
 	<!-- 对包中的所有类进行扫描,以完成Bean创建和自动依赖注入的功能 -->
 	<!-- 自动扫描组件，要把controller去除，他们是在spring-mvc.xml中配置，如果不去除会影响事务管理。 -->
-	<context:component-scan base-package="com.*">
+	<context:component-scan base-package="com.*" use-default-filters="false">
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
 	

@@ -225,10 +225,20 @@ public class User extends BaseEntity{
 		this.ageId = ageId;
 	}
 
+	@Override
+	public String toString() {
+		return "User [username=" + username + ", password=" + password + ", type=" + type + ", realname=" + realname
+				+ ", email=" + email + ", isEnable=" + isEnable + ", createTime=" + createTime + ", classId=" + classId
+				+ ", levelId=" + levelId + ", photoUrl=" + photoUrl + ", provinceCode=" + provinceCode + ", cityCode="
+				+ cityCode + ", countyCode=" + countyCode + ", priceId=" + priceId + ", ageId=" + ageId + ", abilityId="
+				+ abilityId + ", expericeId=" + expericeId + ", educationId=" + educationId + ", phoneNumber="
+				+ phoneNumber + ", cardNumber=" + cardNumber + "]";
+	}
 
 
 
 
+	
 	
 	
 }

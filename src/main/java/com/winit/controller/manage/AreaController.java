@@ -15,7 +15,6 @@ import com.winit.service.AreaService;
 
 
 /**
- * 
  * @desc 获取全国地区  省 市  县
  * @author qiufeng
  * @version 1.0

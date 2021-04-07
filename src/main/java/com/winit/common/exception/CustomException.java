@@ -1,11 +1,11 @@
 package com.winit.common.exception;
 
 /**
- * 自定义异常
  * 
- * 
- * 
- * @date 2016年10月27日 下午10:11:27
+ * @desc 
+ * @author qiufeng
+ * @version 1.0
+ * @time 2021年4月7日 下午3:06:07
  */
 public class CustomException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
