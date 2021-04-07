@@ -58,7 +58,7 @@ public class PutFileUtils {
 //		String bucket = "xyhqsub";
 
 		// 默认不指定key的情况下，以文件内容的hash值作为文件名
-		System.out.println(fileHostPath);
+//		System.out.println(fileHostPath);
 		System.out.println("========================"+accessKey+"========================");
 		String key = UUID.randomUUID().toString() + System.currentTimeMillis() + "." + suffix;
 		try {
