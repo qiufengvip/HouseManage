@@ -53,7 +53,6 @@
                     <select class="form-control" name="type"  id="userType">
                       <option value="1" >保姆</option>
                       <option value="2" selected = "selected">顾客</option>
-                      <option value="0" >管理员</option>  
                  
                     </select>
                 </div>

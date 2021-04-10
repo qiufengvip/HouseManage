@@ -141,7 +141,6 @@
                                               <option value=""></option>
                                              <option value="1">保姆</option>
                                              <option value="2">顾客</option>
-                                              <option value="0">管理员<option>
 					      </select>
                                      </Form-item>    
              

@@ -10,7 +10,7 @@
 ## 后端使用的相关技术
 - spring
 - springMVC
-- fastjson
+- fastjson				数据交互
 - poi					excel表生成
 - commons-fileupload  	文件上传
 - javax.mail           	邮件发送
